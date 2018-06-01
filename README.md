@@ -7,20 +7,20 @@ There are many different ways to keep a Unix/Linux system secure. More general s
 
 ## QUESTION 3
 *The first link on the top of this question goes to the wrong place!*
-I must admit I have never worked with recursive CTE queries, but they seem very useful and interesting. I have done lots of reading on the subject and have come up with a rough solution in sudo-code: 
+I must admit I have never worked with recursive CTE queries, but they seem very useful and interesting. I have done lots of reading on the subject and have come up with a rough solution: 
 
 ```
 WITH RECURSIVE last_run(parent_id, id_list, name_list) AS (
-```
-Select the parent id and parent name by the id from the category then merge with the current category and allow for duplicate values (union all?)
-```
-SELECT id_list, name_list
-FROM last_run
-```
-Where the category id matches the parent id
-```
-WHERE ORDER BY id_list;
-ROLLBACK;
+SELECT id, ARRAY[id] as id_list, name
+FROM category
+WHERE parent_id IS NULL
+
+UNION ALL
+
+SELECT cat.parent_id, id_list || cat.id, name_list || ', ' || cat.name
+FROM last_run run, category cat
+WHERE cat.id = run.parent_id
+...
 ```
 
 ## QUESTION 4
