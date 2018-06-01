@@ -1,0 +1,18 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
+
+.transform-click {
+  transform: rotate(90deg);
+}
