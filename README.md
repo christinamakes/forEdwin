@@ -42,3 +42,5 @@ I think these two will always be my favorite
 ![](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
 
 ![](https://imgs.xkcd.com/comics/standards.png)
+
+ps: go tigers! ![](https://secure.touchnet.com/C21519_ustores/web/uploaded_images/mall/TU_New_Logo.jpg)
