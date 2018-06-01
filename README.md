@@ -1,3 +1,7 @@
+## QUESTION 1 
+See question1.js
+
+
 ## QUESTION 2 -- secure
 
 
@@ -20,6 +24,7 @@ ROLLBACK;
 ```
 
 ## QUESTION 4
+See question4.html / .css / .js
 Rotation should work in Internet Explorer, Edge, Firefox, Opera, and Chrome
 
 
